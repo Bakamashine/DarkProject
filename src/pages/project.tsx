@@ -3,11 +3,11 @@ import { useCallback, useEffect, useState } from "react";
 import { useHotkeys } from "react-hotkeys-hook";
 import { useNavigate, useParams } from "react-router-dom";
 import "../css/project.css";
-import Loader from "@renderer/components/Loader";
-import PaneHeader from "@renderer/components/PaneHeader";
-import EditorToolbar from "@renderer/components/EditorToolbar";
-import PreviewPane from "@renderer/components/PreviewPane";
-import { useTheme } from "@renderer/contexts/ThemeContext";
+import Loader from "../components/Loader";
+import PaneHeader from "../components/PaneHeader";
+import EditorToolbar from "../components/EditorToolbar";
+import PreviewPane from "../components/PreviewPane";
+import { useTheme } from "../contexts/ThemeContext";
 
 export default function Project() {
   const [_html, _setHtml] = useState("");

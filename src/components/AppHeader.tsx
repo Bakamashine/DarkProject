@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
-import { useTheme } from "@renderer/contexts/ThemeContext";
+import { useTheme } from "../contexts/ThemeContext";
 import { MoonIcon, SunIcon } from "./Icons";
 
 interface AppHeaderProps {

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Outlet, useParams } from "react-router-dom";
-import { useTabs } from "@renderer/contexts/TabsContext";
-import TabStrip from "@renderer/components/TabStrip";
+import { useTabs } from "../contexts/TabsContext";
+import TabStrip from "../components/TabStrip";
 
 export default function BasicRedactorLayout() {
   const { project } = useParams<{ project: string }>();

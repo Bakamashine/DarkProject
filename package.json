@@ -1,47 +1,58 @@
 {
-  "name": "dark_project",
+  "name": "DarkProject",
+  "productName": "DarkProject",
   "version": "1.0.0",
+  "private": true,
   "description": "This is program for writing the documents instead of the Microsoft Word or Latex",
-  "license": "ISC",
-  "author": "Bakamashine",
-  "type": "module",
-  "main": "./out/main/index.js",
-  "scripts": {
-    "dev": "electron-vite dev",
-    "build": "electron-vite build",
-    "start": "electron-vite preview",
-    "pack": "electron-vite build && electron-builder"
+  "keywords": [],
+  "license": "MIT",
+  "author": {
+    "name": "Bakamashine",
+    "email": "ivan.fa.002@gmail.com"
   },
-  "build": {
-    "appId": "com.bakamashine.dark-project",
-    "productName": "Dark Project",
-    "directories": {
-      "output": "release"
-    },
-    "files": [
-      "out/**/*"
-    ],
-    "win": {
-      "target": "nsis"
-    }
+  "main": ".vite/build/main.cjs",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "release": "electron-forge release",
+    "lint": "oxlint && oxfmt --check",
+    "lint:fix": "oxlint --fix && oxfmt --write",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^8.0.1",
+    "@electron-forge/maker-deb": "^8.0.1",
+    "@electron-forge/maker-rpm": "^8.0.1",
+    "@electron-forge/maker-squirrel": "^8.0.1",
+    "@electron-forge/maker-zip": "^8.0.1",
+    "@electron-forge/plugin-auto-unpack-natives": "^8.0.1",
+    "@electron-forge/plugin-fuses": "^8.0.1",
+    "@electron-forge/plugin-vite": "^8.0.1",
+    "@electron/fuses": "^2.1.3",
+    "@types/bootstrap": "^5.2.11",
+    "@types/react": "^19.3.0",
+    "@types/react-bootstrap": "^1.0.1",
+    "@types/react-dom": "^19.3.0",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/electron-squirrel-startup": "^1.0.2",
+    "electron": "44.9.2",
+    "oxfmt": "^0.41.0",
+    "oxlint": "^1.89.0",
+    "typescript": "^6.0.3",
+    "vite": "^8.3.4"
   },
   "dependencies": {
     "@monaco-editor/react": "^4.7.0",
     "bootstrap": "^5.3.8",
-    "react": "^19.3.0",
+    "electron-squirrel-startup": "^1.0.1",
+    "react": "^19.3.1",
     "react-bootstrap": "^2.10.10",
-    "react-dom": "^19.3.0",
+    "react-dom": "^19.3.1",
     "react-hotkeys-hook": "^5.3.3",
-    "react-router-dom": "^7.18.4"
-  },
-  "devDependencies": {
-    "@types/react": "^19.3.0",
-    "@types/react-dom": "^19.3.0",
-    "@vitejs/plugin-react": "^5.2.0",
-    "electron": "^44.5.1",
-    "electron-builder": "^26.15.3",
-    "electron-vite": "^5.0.0",
-    "typescript": "^7.0.2",
-    "vite": "^7.3.6"
+    "react-markdown": "^10.1.0",
+    "react-router-dom": "^7.18.4",
+    "rehype-raw": "^7.0.0",
+    "remark-gfm": "^4.0.1"
   }
 }

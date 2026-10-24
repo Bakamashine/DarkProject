@@ -1,5 +1,5 @@
 import { useNavigate, useParams } from "react-router-dom";
-import { useTabs } from "@renderer/contexts/TabsContext";
+import { useTabs } from "../contexts/TabsContext";
 import { CloseAllIcon, FolderIcon } from "./Icons";
 import "../css/tabs.css";
 

@@ -1,15 +1,15 @@
 import { FormEvent, useEffect, useState } from "react";
 import { Alert, Button, Container, Col, Row } from "react-bootstrap";
-import AppHeader from "@renderer/components/AppHeader";
-import ActivityBar from "@renderer/components/ActivityBar";
-import ProjectCard from "@renderer/components/ProjectCard";
-import ProjectSearch from "@renderer/components/ProjectSearch";
-import ProjectsPagination from "@renderer/components/ProjectsPagination";
-import CreateProjectModal from "@renderer/components/CreateProjectModal";
-import AboutModal from "@renderer/components/AboutModal";
-import TabStrip from "@renderer/components/TabStrip";
-import Loader from "@renderer/components/Loader";
-import { timeout_alert } from "@renderer/constants/timeout";
+import AppHeader from "../components/AppHeader";
+import ActivityBar from "../components/ActivityBar";
+import ProjectCard from "../components/ProjectCard";
+import ProjectSearch from "../components/ProjectSearch";
+import ProjectsPagination from "../components/ProjectsPagination";
+import CreateProjectModal from "../components/CreateProjectModal";
+import AboutModal from "../components/AboutModal";
+import TabStrip from "../components/TabStrip";
+import Loader from "../components/Loader";
+import { timeout_alert } from "../constants/timeout";
 import "../css/home.css";
 
 const ITEMS_PER_PAGE = 8;

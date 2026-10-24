@@ -1,7 +1,7 @@
 import { MouseEvent } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Card } from "react-bootstrap";
-import { useTabs } from "@renderer/contexts/TabsContext";
+import { useTabs } from "../contexts/TabsContext";
 import { FolderIcon } from "./Icons";
 
 interface ProjectCardProps {

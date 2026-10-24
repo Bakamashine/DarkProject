@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Project</title>
+    <script>
+      // Applies the stored theme before first paint. Keep the storage key in
+      // sync with THEME_STORAGE_KEY in src/theme.tsx.
+      (() => {
+        const stored = localStorage.getItem('cloneobsidianvite:theme');
+        document.documentElement.dataset.theme =
+          stored === 'light' ? 'light' : 'dark';
+      })();
+    </script>
+
+
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/renderer.ts"></script>
+  </body>
+</html>
